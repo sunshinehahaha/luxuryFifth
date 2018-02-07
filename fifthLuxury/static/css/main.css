@@ -1,0 +1,162 @@
+.main .head {
+  width: 100%;
+  height: 82px;
+}
+.main .head img{
+  width: 100%;
+}
+.main .page-line{
+  height: 30px;
+  width: 100%;
+  background: #f2f2f2;
+}
+.main .page-line .w{
+    position: relative;
+}
+.main .page-line .icon-home{
+  color: #666666;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+}
+.main .page-line .iFont{
+  padding-left: 22px;
+  padding-top: 3px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+}
+.main .page-line .line{
+  width: 1px;
+  height: 12px;
+  display: inline-block;
+  background: #dfdfdf;
+  position: absolute;
+  left: 109px;
+  top: 9px;
+}
+.main .page-line .w .l li:nth-of-type(1){
+  width: 110px;
+}
+.main .page-line .w .l li:nth-of-type(2){
+  position: relative;
+}
+.main .page-line .icon-web-icon-{
+  position: absolute;
+  top: 3px;
+  left: 14px;
+}
+.main .page-line .iFont2{
+  padding-left: 34px;
+  padding-top: 3px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+}
+.main .page-line .w ul.r li{
+  float: left;
+}
+.main .page-line .w .r {
+  color: #777;
+}
+.main .page-line .w .r .mobile{
+  width: 126px;
+  text-align: center;
+  height: 29px;
+  line-height: 27px;
+  color: #777777;
+  position: relative;
+  border:1px solid #f2f2f2;
+  border-top: 0;
+  top: 2px;
+  margin-left: 1px;
+}
+.main .page-line .w .r .mobile:hover{
+  background: #fff;
+  border:1px solid #ccc;
+  border-top: 0;
+  cursor: pointer;
+}
+.main .page-line .w .r .mobile:hover .qr{
+  display: block;
+}
+.main .page-line .w .r .mobile .icon-erweima{
+  font-size: 16px;
+  color: #666666;
+}
+.main .page-line .w .r .mobile .icon-xiajiantou{
+  font-size: 12px;
+  color: #838383;
+}
+.main .page-line .w .r .mobile .qr{
+  position: absolute;
+  text-align: center;
+  height: 177px;
+  width: 126px;
+  border:1px solid #ccc;
+  background: #fff;
+  border-top: 0;
+  left: -1px;
+  display: none;
+}
+.main .page-line .w .r .mobile .qr img{
+  width: 108px;
+  margin-top: 10px;
+}
+.main .page-line .w .r .mobile .qr .para{
+  line-height: 20px;
+  color: #666666;
+}
+.main .page-line .w .r .mobile .qr .reward{
+  font-size: 16px;
+  color: #af0115;
+}
+.main .page-line .w .r .help{
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  color: #777;
+  text-align: center;
+}
+.main .page-line .w .r .regist{
+  width: 43px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 45px;
+  position: relative;
+}
+.main .page-line .w .r .regist img{
+  position: absolute;
+  left: 20px;
+}
+.main .page-line .w .r .my{
+  width: 130px;
+  height: 29px;
+  line-height: 27px;
+  text-align: center;
+  position: relative;
+  top:2px;
+  border:1px solid rgba(0,0,0,0);
+  border-bottom: 0;
+}
+.main .page-line .w .r .my:hover{
+  background: #fff;
+  border:1px solid #ccc;
+  border-bottom: 0;
+}
+.main .page-line .w .r .my:hover .myDetail{
+  display: block;
+}
+.main .page-line .w .r .my .myDetail{
+  width: 130px;
+  display: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-top: 0;
+  height: 150px;
+  left: -1px;
+  position: absolute;
+}
+.main .page-line .w .r .my .myDetail li{
+  clear: both;
+  height: 30px;
+  width: 130px;
+}

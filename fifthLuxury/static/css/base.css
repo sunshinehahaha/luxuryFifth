@@ -1,0 +1,35 @@
+div, body, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6,p {
+    margin: 0;
+    font-weight: normal;
+}
+.w {
+  width: 1200px;
+  margin:0 auto;
+}
+.l{
+  float: left;
+}
+.r{
+  float: right;
+}
+i, em, strong {
+    font-style: normal;
+    font-weight: normal;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #666666;
+}
+a:hover{
+  color: #c69c6d;
+}
+html,body{
+  font: 12px/200% "microsoft yahei", 微软雅黑, Helvetica, Arial, Tahoma, 黑体, 宋体, sans-serif;
+}
