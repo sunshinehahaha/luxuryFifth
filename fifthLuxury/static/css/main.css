@@ -53,6 +53,7 @@
 }
 .main .page-line .w ul.r li{
   float: left;
+  cursor: pointer;
 }
 .main .page-line .w .r {
   color: #777;
@@ -69,18 +70,21 @@
   top: 2px;
   margin-left: 1px;
 }
+.main .page-line .w .r .mobile .icon-shangjiantou{
+  font-size: 10px;
+}
 .main .page-line .w .r .mobile:hover{
   background: #fff;
   border:1px solid #ccc;
   border-top: 0;
   cursor: pointer;
+  color: #b10000;
 }
 .main .page-line .w .r .mobile:hover .qr{
   display: block;
 }
 .main .page-line .w .r .mobile .icon-erweima{
   font-size: 16px;
-  color: #666666;
 }
 .main .page-line .w .r .mobile .icon-xiajiantou{
   font-size: 12px;
@@ -115,6 +119,18 @@
   line-height: 30px;
   color: #777;
   text-align: center;
+  position: relative;
+}
+.main .page-line .w .r .help:hover{
+  color: #c69c6d;
+}
+.main .page-line .w .r .help .hline{
+  width: 1px;
+  height: 12px;
+  background: #dfdfdf;
+  position: absolute;
+  right: 0;
+  top: 9px;
 }
 .main .page-line .w .r .regist{
   width: 43px;
@@ -123,13 +139,23 @@
   padding-left: 45px;
   position: relative;
 }
+.main .page-line .w .r .regist .rline{
+  width: 1px;
+  height: 12px;
+  background: #dfdfdf;
+  display: inline-block;
+  position: absolute;
+  right: 2px;
+  top: 9px;
+}
 .main .page-line .w .r .regist img{
   position: absolute;
-  left: 20px;
+  left: 18px;
 }
 .main .page-line .w .r .my{
   width: 130px;
   height: 29px;
+  padding-right: 5px;
   line-height: 27px;
   text-align: center;
   position: relative;
@@ -137,26 +163,189 @@
   border:1px solid rgba(0,0,0,0);
   border-bottom: 0;
 }
+.main .page-line .w .r .my .mline{
+  width: 1px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  background: #dfdfdf;
+  right: 0px;
+  top: 7px;
+}
+.main .page-line .w .r .my .icon-xiajiantou,.main .page-line .w .r .my .icon-shangjiantou{
+  font-size: 10px;
+  position: absolute;
+  right: 11px;
+  top: -1px;
+}
 .main .page-line .w .r .my:hover{
   background: #fff;
   border:1px solid #ccc;
   border-bottom: 0;
+  color: #c69c6d;
 }
 .main .page-line .w .r .my:hover .myDetail{
   display: block;
 }
 .main .page-line .w .r .my .myDetail{
-  width: 130px;
+  width: 135px;
   display: none;
   border: 1px solid #ccc;
   background: #fff;
   border-top: 0;
   height: 150px;
   left: -1px;
+  color: #666666;
   position: absolute;
 }
 .main .page-line .w .r .my .myDetail li{
   clear: both;
   height: 30px;
   width: 130px;
+}
+.main .page-line .w .r .my .myDetail li:hover{
+  color: #b80000;
+}
+.main .page-line .w .r .login{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  padding-right: 15px;
+  position: relative;
+}
+.main .page-line .w .r .login .lline{
+  position: absolute;
+  right: -3px;
+  top: 9px;
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: #dfdfdf;
+}
+.main .page-line .w .r .login a:hover{
+  color: #b00000;
+}
+.main .search{
+  height: 110px;
+}
+.main .search .img2{
+  margin-top: 12px;
+  margin-left: 48px;
+}
+.main .search .searchInput{
+  margin-left: 55px;
+  width: 347px;
+  height: 38px;
+  background: #c69c6d;
+  margin-top: 36px;
+}
+.main .search .searchInput .input1{
+  width: 258px;
+  height: 34px;
+  border: 0;
+  margin-top: 2px;
+  margin-left: 2px;
+  outline: none;
+  padding-left: 5px;
+}
+.main .search .searchInput .find{
+  padding-left: 22px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing:2px;
+  cursor: pointer;
+}
+.main .search .img1{
+  height: 110px;
+}
+.main .search .searchInput .cate a{
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 23px;
+  color: #999999;
+}
+.main .search .searchInput .cate a:hover{
+  color: #b20000;
+}
+.main .search .img3{
+  margin-left: 54PX;
+  margin-top: 36px;
+}
+.main .search .cart{
+  width: 94px;
+  height: 32px;
+  border: 1px solid #ccc;
+  margin-left: 14px;
+  margin-top: 35px;
+}
+.main .search .cart img{
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.main .nav{
+  height: 37px;
+  width: 100%;
+  background: #171818;
+  border-bottom: 1px solid #cbcaca;
+}
+.main .nav .goods{
+
+}
+.main .nav .goods li{
+  float: left;
+  height: 37px;
+  line-height: 37px;
+}
+.main .nav .goods li a{
+    color: #c69c6d;
+    padding: 0 27px;
+}
+.main .nav .goods li a:hover{
+  color: #fff;
+}
+.main .nav .goods .classify{
+  width: 130px;
+  height: 37px;
+  background: #cf1515;
+  text-align: center;
+}
+.main .nav .goods .classify a{
+    color: #fff;
+}
+.main .nav .goods .arrive{
+  position: relative;
+}
+.main .nav .goods .arrive:hover a,.main .nav .goods .arrive:hover .icon-weizhi{
+  color: #fff;
+}
+.main .nav .goods .arrive .icon-weizhi{
+  color: #c8a985;
+  font-size: 20px;
+  position: absolute;
+  left: 3px;
+}
+.main .nav .goods .oversea{
+  height: 37px;
+}
+.main .nav .goods .oversea img{
+  height: 37px;
+}
+.main .nav .goods .zheng{
+  width: 27px;
+  height: 37px;
+  background: url(../images/share02.png) no-repeat -239px -69px;
+  margin-left: 17px;
+}
+.main .nav .goods .vip{
+  width: 27px;
+  height: 37px;
+  background: url(../images/share02.png) no-repeat -298px -69px;
+  margin-left: 17px;
+}
+.main .nav .goods .quan{
+  width: 27px;
+  height: 37px;
+  background: url(../images/share02.png) no-repeat -355px -69px;
+  margin-left: 17px;
 }
