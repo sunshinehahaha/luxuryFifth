@@ -87,7 +87,26 @@
     <div class="nav">
       <div class="w">
         <ul class="goods">
-          <li class="classify"><a href="#">商品分类</a></li>
+          <li class="classify">
+            <a href="#">商品分类</a>
+            <ul class="recommand">
+              <li><a href="#">推荐品牌</a></li>
+              <li><a href="#">箱包</a></li>
+              <li><a href="#">美妆</a></li>
+              <li><a href="#">服装</a></li>
+              <li><a href="#">腕表</a></li>
+              <li><a href="#">配饰</a></li>
+              <li><a href="#">鞋靴</a></li>
+              <li><a href="#">母婴</a></li>
+              <li><a href="#">美酒</a></li>
+              <li><a href="#">美食</a></li>
+              <li><a href="#">家居</a></li>
+              <li><a href="#">电子</a></li>
+              <li><a href="#">办公</a></li>
+              <li><a href="#">礼品</a></li>
+              <li><a href="#">海外馆</a></li>
+            </ul>
+          </li>
           <li><a href="#">品牌</a></li>
           <li><a href="#">最新</a></li>
           <li><a href="#">女士</a></li>
