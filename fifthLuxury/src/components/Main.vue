@@ -90,21 +90,21 @@
           <li class="classify">
             <a href="#">商品分类</a>
             <ul class="recommand">
-              <li><a href="#">推荐品牌</a></li>
-              <li><a href="#">箱包</a></li>
-              <li><a href="#">美妆</a></li>
-              <li><a href="#">服装</a></li>
-              <li><a href="#">腕表</a></li>
-              <li><a href="#">配饰</a></li>
-              <li><a href="#">鞋靴</a></li>
-              <li><a href="#">母婴</a></li>
-              <li><a href="#">美酒</a></li>
-              <li><a href="#">美食</a></li>
-              <li><a href="#">家居</a></li>
-              <li><a href="#">电子</a></li>
-              <li><a href="#">办公</a></li>
-              <li><a href="#">礼品</a></li>
-              <li><a href="#">海外馆</a></li>
+              <li><a href="#">推荐品牌</a><span></span></li>
+              <li><a href="#">箱包</a><span></span></li>
+              <li><a href="#">美妆</a><span></span></li>
+              <li><a href="#">服装</a><span></span></li>
+              <li><a href="#">腕表</a><span></span></li>
+              <li><a href="#">配饰</a><span></span></li>
+              <li><a href="#">鞋靴</a><span></span></li>
+              <li><a href="#">母婴</a><span></span></li>
+              <li><a href="#">美酒</a><span></span></li>
+              <li><a href="#">美食</a><span></span></li>
+              <li><a href="#">家居</a><span></span></li>
+              <li><a href="#">电子</a><span></span></li>
+              <li><a href="#">办公</a><span></span></li>
+              <li><a href="#">礼品</a><span></span></li>
+              <li><a href="#">海外馆</a><span></span></li>
             </ul>
           </li>
           <li><a href="#">品牌</a></li>
@@ -129,13 +129,31 @@
         </ul>
       </div>
     </div>
+    <div class="slide">
+      <el-carousel :interval="5000" arrow="always" height="520px">
+        <el-carousel-item v-for="item in imgs" :key="item">
+          <img :src="item"/>
+        </el-carousel-item>
+      </el-carousel>
+    </div>
+    <div class="flagship w">
+      <img src="../../static/images/mainx_brandship.png">
+      <ul class="brand1">
+        <li v-for="value in imgs2">
+          <img :src="value"/>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
 export default {
   name: 'main-comp',
   data () {
-    return {}
+    return {
+      imgs: ['../../static/images/swip1.jpg', '../../static/images/swip2.jpg', '../../static/images/swip3.jpg', '../../static/images/swip4.jpg', '../../static/images/swip5.jpg', '../../static/images/swip6.jpg'],
+      imgs2: ['../../static/images/g1.png', '../../static/images/g2.jpg', '../../static/images/g3.jpg', '../../static/images/g4.jpg', '../../static/images/g5.jpg']
+    }
   },
   mounted () {
     this.changeIcon()
