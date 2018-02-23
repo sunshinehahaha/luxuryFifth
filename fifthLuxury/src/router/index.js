@@ -5,6 +5,7 @@ import Cart from '@/components/Cart'
 import Login from '@/components/Login'
 import Regist from '@/components/Regist'
 import Detail from '@/components/Detail'
+import Footer from '@/components/Footer'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -32,6 +33,11 @@ export default new Router({
       path: '/detail',
       name: 'Detail',
       component: Detail
+    },
+    {
+      path: '/footer',
+      name: 'Footer',
+      component: Footer
     }
   ]
 })

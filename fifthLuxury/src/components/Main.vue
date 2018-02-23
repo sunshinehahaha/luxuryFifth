@@ -144,9 +144,11 @@
         </li>
       </ul>
     </div>
+    <Footer/>
   </div>
 </template>
 <script>
+import Footer from './Footer.vue'
 export default {
   name: 'main-comp',
   data () {
@@ -154,6 +156,9 @@ export default {
       imgs: ['../../static/images/swip1.jpg', '../../static/images/swip2.jpg', '../../static/images/swip3.jpg', '../../static/images/swip4.jpg', '../../static/images/swip5.jpg', '../../static/images/swip6.jpg'],
       imgs2: ['../../static/images/g1.png', '../../static/images/g2.jpg', '../../static/images/g3.jpg', '../../static/images/g4.jpg', '../../static/images/g5.jpg']
     }
+  },
+  components: {
+    Footer
   },
   mounted () {
     this.changeIcon()
