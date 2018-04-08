@@ -139,23 +139,156 @@
     <div class="flagship w">
       <img src="../../static/images/mainx_brandship.png">
       <ul class="brand1">
-        <li v-for="value in imgs2">
-          <img :src="value"/>
+        <li v-for="value in details" v-bind:key="value" class="liItem">
+          <img :src="value.img"/>
+          <div class="stretch">
+            <div class="imgSize">
+              <img :src="value.imgSmall"/>
+            </div>
+            <div class="line">
+            </div>
+            <div class="goodsStyle">
+              <p>{{value.goodsName}}</p>
+              <p>{{value.cName}}</p>
+            </div>
+          </div>
         </li>
       </ul>
+    </div>
+    <div class="hotStore w">
+      <div class="hotStoreHead">
+        <div class="hotStoreImg l">
+          <img src="../../static/images/hotstore_t.jpg">
+        </div>
+        <div class="hotarrowbtn r">
+          <a @click="slidePrev()">
+            <span class="hot_pre"></span>
+          </a>
+          <a @click="slideNext()">
+            <span class="hot_next"  ></span>
+          </a>
+        </div>
+      </div>
+      <div class="hotflag">
+        <ul class="hotflagbox">
+          <li class="hotli">
+            <div class="hotflagson" v-for="item in hotStore" @click="lineAnimate()">
+                <img :src="item.brandImg">
+                <div class="hotmiddle">
+                    <a>
+                        <p class="brandchnname">{{item.brandName}}</p>
+                        <div class="blacksline">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="topline lineBorder"></div>
+                <div class="rightline lineBorder"></div>
+                <div class="bottomline lineBorder"></div>
+                <div class="leftline lineBorder"></div>
+            </div>
+          </li>
+          <li class="hotli">
+            <div class="hotflagson" v-for="item in hotStore1" @click="lineAnimate()">
+                <img :src="item.brandImg">
+                <div class="hotmiddle">
+                    <a>
+                        <p class="brandchnname">{{item.brandName}}</p>
+                        <div class="blacksline">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="topline lineBorder"></div>
+                <div class="rightline lineBorder"></div>
+                <div class="bottomline lineBorder"></div>
+                <div class="leftline lineBorder"></div>
+            </div>
+          </li>
+          <li class="hotli">
+            <div class="hotflagson" v-for="item in hotStore2" @click="lineAnimate()">
+                <img :src="item.brandImg">
+                <div class="hotmiddle">
+                    <a>
+                        <p class="brandchnname">{{item.brandName}}</p>
+                        <div class="blacksline">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="topline lineBorder"></div>
+                <div class="rightline lineBorder"></div>
+                <div class="bottomline lineBorder"></div>
+                <div class="leftline lineBorder"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
     <Footer/>
   </div>
 </template>
 <script>
 import Footer from './Footer.vue'
+// import $ from '../assets/jquery-3.2.1.min.js'
 export default {
   name: 'main-comp',
   data () {
     return {
       imgs: ['../../static/images/swip1.jpg', '../../static/images/swip2.jpg', '../../static/images/swip3.jpg', '../../static/images/swip4.jpg', '../../static/images/swip5.jpg', '../../static/images/swip6.jpg'],
-      imgs2: ['../../static/images/g1.png', '../../static/images/g2.jpg', '../../static/images/g3.jpg', '../../static/images/g4.jpg', '../../static/images/g5.jpg']
-    }
+      details:[{'goodsName':'Louis Vuitton/LV','cName':'路易.威登','img':'../../static/images/g1.png','imgSmall': '../../static/images/img1.png'},
+               {'goodsName':'SK-II','cName':'SK-II','img':'../../static/images/g2.jpg','imgSmall': '../../static/images/img2.png'},
+               {'goodsName':'Coach','cName':'蔻驰','img':'../../static/images/g3.png','imgSmall': '../../static/images/img3.png'},
+               {'goodsName':'Omega','cName':'欧米茄','img':'../../static/images/g4.jpg','imgSmall': '../../static/images/img4.png'},
+               {'goodsName':'Valentino','cName':'瓦伦蒂诺','img':'../../static/images/g5.jpg','imgSmall': '../../static/images/img5.jpg'}
+             ],
+      hotStore:[{'brandImg':'../../static/images/pic1.jpg','brandName':'柏品'},
+                {'brandImg':'../../static/images/pic2.png','brandName':'波比布朗'},
+                {'brandImg':'../../static/images/pic3.png','brandName':'巴利'},
+                {'brandImg':'../../static/images/pic4.png','brandName':'宝玑'},
+                {'brandImg':'../../static/images/pic5.png','brandName':'雷朋'},
+                {'brandImg':'../../static/images/pic6.png','brandName':'雨果.波士'},
+                {'brandImg':'../../static/images/pic7.png','brandName':'卡尔文.克莱恩'},
+                {'brandImg':'../../static/images/pic8.png','brandName':'迪奥'},
+                {'brandImg':'../../static/images/pic9.png','brandName':'齐穆里'},
+                {'brandImg':'../../static/images/pic10.png','brandName':'歌蕾'},
+                {'brandImg':'../../static/images/pic11.jpg','brandName':'LuckyOzasec'},
+                {'brandImg':'../../static/images/pic12.png','brandName':'Refa'},
+                {'brandImg':'../../static/images/pic13.png','brandName':'POLICE'},
+                {'brandImg':'../../static/images/pic14.png','brandName':'瑞贝卡·明可弗'}
+              ],
+      hotStore1:[{'brandImg':'../../static/images/pic15.png','brandName':'施华洛世奇'},
+                  {'brandImg':'../../static/images/pic16.png','brandName':'POLICE'},
+                  {'brandImg':'../../static/images/pic17.png','brandName':'兰蔻'},
+                  {'brandImg':'../../static/images/pic18.png','brandName':'POLICE'},
+                  {'brandImg':'../../static/images/pic5.png','brandName':'雷朋'},
+                  {'brandImg':'../../static/images/pic6.png','brandName':'雨果.波士'},
+                  {'brandImg':'../../static/images/pic7.png','brandName':'卡尔文.克莱恩'},
+                  {'brandImg':'../../static/images/pic8.png','brandName':'迪奥'},
+                  {'brandImg':'../../static/images/pic9.png','brandName':'齐穆里'},
+                  {'brandImg':'../../static/images/pic10.png','brandName':'歌蕾'},
+                  {'brandImg':'../../static/images/pic11.jpg','brandName':'LuckyOzasec'},
+                  {'brandImg':'../../static/images/pic12.png','brandName':'Refa'},
+                  {'brandImg':'../../static/images/pic13.png','brandName':'POLICE'},
+                  {'brandImg':'../../static/images/pic14.png','brandName':'瑞贝卡·明可弗'}
+                ],
+      hotStore2:[{'brandImg':'../../static/images/pic15.png','brandName':'施华洛世奇'},
+                  {'brandImg':'../../static/images/pic16.png','brandName':'POLICE'},
+                  {'brandImg':'../../static/images/pic17.png','brandName':'兰蔻'},
+                  {'brandImg':'../../static/images/pic18.png','brandName':'POLICE'},
+                  {'brandImg':'../../static/images/pic5.png','brandName':'雷朋'},
+                  {'brandImg':'../../static/images/pic6.png','brandName':'雨果.波士'},
+                  {'brandImg':'../../static/images/pic7.png','brandName':'卡尔文.克莱恩'},
+                  {'brandImg':'../../static/images/pic8.png','brandName':'迪奥'},
+                  {'brandImg':'../../static/images/pic9.png','brandName':'齐穆里'},
+                  {'brandImg':'../../static/images/pic10.png','brandName':'歌蕾'},
+                  {'brandImg':'../../static/images/pic11.jpg','brandName':'LuckyOzasec'},
+                  {'brandImg':'../../static/images/pic12.png','brandName':'Refa'},
+                  {'brandImg':'../../static/images/pic13.png','brandName':'POLICE'},
+                  {'brandImg':'../../static/images/pic14.png','brandName':'瑞贝卡·明可弗'}
+                ],
+        currenIndex: 0,
+      }
   },
   components: {
     Footer
@@ -180,10 +313,59 @@ export default {
       mobile.onmouseout = function () {
         that.$refs.mobileIcon.className = 'iconfont icon-xiajiantou'
       }
+    },
+    slideTo (index) {
+      let left;
+      if (index >= 3) {
+          this.currenIndex = 2;
+      }
+
+      if (index <= -1) {
+          this.currenIndex = 0;
+      }
+      left = -1200 * this.currenIndex + 'px';
+      $('.hotflagbox').animate({
+          left: left
+      }, 180, 'linear')
+    },
+    slidePrev () {
+      this.currenIndex--;
+      this.slideTo(this.currenIndex);
+    },
+    slideNext () {
+      this.currenIndex++;
+      this.slideTo(this.currenIndex);
+    },
+    lineAnimate () {
+      console.log('hhhh')
+      console.log($(this).find('.topline'))
+        // $(this).find('.topline').animate({
+        //   left:0,
+        //   top:0
+        // },300,'linear')
+        // $(this).find('.topline').css({
+        //     width:'166px',
+        //     height:'1px'
+        // },300,'linear')
+        // $(this).find('.bottomline').animate({
+        //     width:'192px',
+        //     height:'1px'
+        // },300,'linear')
+        // $(this).find('.leftline').animate({
+        //     width:'1px',
+        //     height:'63px'
+        // },300,'linear')
+        // $(this).find('.rightline').animate({
+        //     width:'1px',
+        //     height:'63px'
+        // },300,'linear')
     }
   }
 }
 </script>
 
 <style lang="css">
+.stretch{
+
+}
 </style>

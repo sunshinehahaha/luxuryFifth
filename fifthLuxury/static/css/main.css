@@ -489,6 +489,7 @@
 }
 .main .flagship img{
   width: 100%;
+  height: 100%;
 }
 .main .flagship .brand1{
   display: flex;
@@ -498,4 +499,171 @@
 }
 .main .flagship .brand1 li{
   float: left;
+}
+.main .flagship .liItem{
+  position: relative;
+  width:234px;
+  height: 336px;
+  overflow: hidden;
+}
+.main .flagship .liItem .stretch{
+  position: absolute;
+  width: 174px;
+  height: 154px;
+  bottom: -100px;
+  left:30px;
+  background: #fff;
+  transition: all 0.5s;
+}
+.main .flagship .liItem:hover .stretch{
+  bottom:0;
+}
+.main .flagship .liItem .stretch .imgSize{
+  width: 60px;
+  height: 30px;
+  margin:0 auto;
+  margin-top: 10px;
+}
+.main .flagship .liItem .stretch .goodsStyle{
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+.main .flagship .liItem .stretch .line{
+  width:20px;
+  height: 2px;
+  background: #000;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.main .hotStore{
+  overflow: hidden;
+}
+.main .hotStore .hotStoreHead{
+  height: 60px;
+}
+.main .hotStore .hotStoreHead .hotStoreImg{
+  width: 230px;
+  height: 60px;
+}
+.main .hotStore .hotStoreHead .hotStoreImg img{
+  width: 100%;
+  height: 100%;
+}
+.main .hotStore .hotStoreHead .hotarrowbtn {
+    float: right;
+    padding-top: 23px;
+    padding-right: 15px;
+}
+.main .hotStore .hotStoreHead .hotarrowbtn span{
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+}
+.main .hotStore .hotStoreHead .hotarrowbtn .hot_pre{
+  background: url(../images/share02.png) no-repeat -160px -384px;
+}
+.main .hotStore .hotStoreHead .hotarrowbtn .hot_next{
+  background: url(../images/share02.png) no-repeat -180px -384px;
+  margin-left: 20px;
+}
+.main .hotStore .hotflag{
+
+}
+.main .hotStore .hotflag .hotflagbox{
+  width: 3630px;
+  height: 184px;
+  position: relative;
+  left: 0;
+}
+.main .hotStore .hotflag .hotflagbox .hotli{
+  width: 1200px;
+  height: 184px;
+  flex-wrap: wrap;
+  float: left;
+}
+.hotflagbox .hotflagson {
+  position: relative;
+  display: inline-block;
+  width: 107px;
+  height: 55px;
+  padding: 14px 29px;
+  border: 1px solid #dfdfdf;
+  margin-right: 4px;
+  margin-bottom: 7px;
+}
+.hotflagson img {
+  width: 107px;
+  height: 54px;
+}
+.hotflagbox .hotflagson:hover .topline{
+  width: 165px;
+  transition: all 0.3s linear;
+}
+.hotflagbox .hotflagson:hover .bottomline{
+  width: 165px;
+  transition: all 0.3s linear;
+}
+.hotflagbox .hotflagson:hover .leftline{
+  height: 84px;
+  transition: all 0.3s linear;
+}
+.hotflagbox .hotflagson:hover .rightline{
+  height: 84px;
+  transition: all 0.3s linear;
+}
+.hotflagbox .hotflagson .lineBorder{
+  position: absolute;
+  background: #000;
+}
+.hotflagbox .hotflagson .topline{
+  left:0;
+  top:0;
+  width: 0;
+  height: 1px;
+}
+.hotflagbox .hotflagson .rightline{
+  right:0;
+  bottom:0;
+  width:1px;
+  height: 0;
+}
+.hotflagbox .hotflagson .bottomline{
+  right:0;
+  bottom:0;
+  width: 0;
+  height: 1px;
+}
+.hotflagbox .hotflagson .leftline{
+  left:0;
+  top:0;
+  width:1px;
+  height: 0;
+}
+.hotflagbox .hotflagson .hotmiddle{
+  position: absolute;
+  width: 166px;
+  height: 65px;
+  background: #fff;
+  left:0;
+  top:0;
+  opacity: 0;
+  padding-top: 20px;
+}
+.hotmiddle .brandchnname {
+    font-size: 18px;
+    text-align: center;
+}
+.hotmiddle .blacksline span {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+.hotmiddle .blacksline {
+    text-align: center;
+}
+.hotflagbox .hotflagson:hover .hotmiddle{
+  opacity: 1;
+  transition: all 0.3s linear;
 }
