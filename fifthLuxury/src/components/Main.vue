@@ -225,6 +225,18 @@
         </ul>
       </div>
     </div>
+    <div class="oversealife_title w">
+      <img src="../../static/images/oversealifestyle.jpg">
+      <ul>
+        <li v-for="item in overseaImg">
+          <img :src="item">
+          <span class="opacityHidden"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="storesame_title w">
+      <img src="../../static/images/storesametitle.jpg">
+    </div>
     <Footer/>
   </div>
 </template>
@@ -288,6 +300,7 @@ export default {
                   {'brandImg':'../../static/images/pic14.png','brandName':'瑞贝卡·明可弗'}
                 ],
         currenIndex: 0,
+        overseaImg: ['../../static/images/img1.jpg','../../static/images/img2.jpg','../../static/images/img3.jpg','../../static/images/img4.jpg']
       }
   },
   components: {
@@ -339,26 +352,6 @@ export default {
     lineAnimate () {
       console.log('hhhh')
       console.log($(this).find('.topline'))
-        // $(this).find('.topline').animate({
-        //   left:0,
-        //   top:0
-        // },300,'linear')
-        // $(this).find('.topline').css({
-        //     width:'166px',
-        //     height:'1px'
-        // },300,'linear')
-        // $(this).find('.bottomline').animate({
-        //     width:'192px',
-        //     height:'1px'
-        // },300,'linear')
-        // $(this).find('.leftline').animate({
-        //     width:'1px',
-        //     height:'63px'
-        // },300,'linear')
-        // $(this).find('.rightline').animate({
-        //     width:'1px',
-        //     height:'63px'
-        // },300,'linear')
     }
   }
 }

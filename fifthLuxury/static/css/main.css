@@ -667,3 +667,36 @@
   opacity: 1;
   transition: all 0.3s linear;
 }
+.main .oversealife_title ul {
+  flex-direction: row;
+  width: 1210px;
+  justify-content: space-between;
+}
+.main .oversealife_title ul li{
+  display: inline-block;
+  width:295px;
+  height: 393px;
+  margin-right: 10px;
+  position: relative;
+}
+.main .oversealife_title ul li:last-of-type{
+  margin-right: 0;
+}
+.main .oversealife_title ul li img{
+  width: 100%;
+  height: 100%;
+}
+.main .oversealife_title ul li:hover .opacityHidden{
+  transition: all 0.3s linear;
+  opacity: 0.3;
+}
+.main .oversealife_title .opacityHidden{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width:295px;
+  height: 393px;
+  background: #fff;
+  cursor: pointer;
+}
