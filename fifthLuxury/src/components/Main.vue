@@ -237,6 +237,311 @@
     <div class="storesame_title w">
       <img src="../../static/images/storesametitle.jpg">
     </div>
+    <ul class="storesame_link w">
+      <li>热卖品牌</li>
+      <li>新品推荐</li>
+      <li>明星同款</li>
+    </ul>
+    <div class="storesame w">
+      <ul class="storesame_box">
+        <li class="storeLi">
+          <div class="part1">
+              <div class="left l">
+                  <img src="./../../static/images/pic_068.jpg">
+              </div>
+              <div class="right r">
+                  <div class="r-top">
+                      <ul>
+                          <li class="part1">
+                              <div class="phgra">
+                                  <p class="bold">Tiffany & Co.</p>
+                                  <p>蒂芙尼</p>
+                                  <p>￥ 12096</p>
+                              </div>
+                              <img src="./../../static/images/1 (2).jpg">
+                          </li>
+                          <li class="part2">
+                              <div class="phgra">
+                                  <p class="bold">PINKO</p>
+                                  <p>pinko</p>
+                                  <p>￥ 2762</p>
+                              </div>
+                              <img src="./../../static/images/2 (2).jpg">
+                          </li>
+                          <li class="part3">
+                              <div class="phgra">
+                                  <p class="bold">Stila</p>
+                                  <p> ￥ 529</p>
+                              </div>
+                              <img src="./../../static/images/3 (2).jpg">
+                          </li>
+                      </ul>
+                      <ul>
+                          <li class="part1">
+                              <div class="phgra">
+                                  <p class="bold">BIANCA DI</p>
+                                  <p>￥ 1479</p>
+                              </div>
+                              <img src="./../../static/images/pic_071.jpg">
+                          </li>
+                          <li class="part2">
+                              <div class="phgra">
+                                  <p class="bold"> Bvlgari</p>
+                                  <p>宝格丽</p>
+                                  <p>￥ 20240</p>
+                              </div>
+                              <img src="./../../static/images/pic_072.jpg">
+                          </li>
+                          <li class="part3">
+                              <div class="phgra">
+                                  <p class="bold">Saint Laurent</p>
+                                  <p>圣罗兰</p>
+                                  <p> ￥2302</p>
+                              </div>
+                              <img src="./../../static/images/pic_073.jpg">
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </li>
+        <li  class="storeLi">
+          <div class="part1">
+              <div class="left l">
+                  <img src="./../../static/images/image1.jpg">
+              </div>
+              <div class="right r">
+                  <div class="r-top">
+                      <ul>
+                          <li class="part1">
+                              <div class="phgra">
+                                  <p class="bold">Tiffany & Co.</p>
+                                  <p>蒂芙尼</p>
+                                  <p>￥ 12096</p>
+                              </div>
+                              <img src="./../../static/images/image2.jpg">
+                          </li>
+                          <li class="part2">
+                              <div class="phgra">
+                                  <p class="bold">PINKO</p>
+                                  <p>pinko</p>
+                                  <p>￥ 2762</p>
+                              </div>
+                              <img src="./../../static/images/image3.jpg">
+                          </li>
+                          <li class="part3">
+                              <div class="phgra">
+                                  <p class="bold">Stila</p>
+                                  <p> ￥ 529</p>
+                              </div>
+                              <img src="./../../static/images/image4.jpg">
+                          </li>
+                      </ul>
+                      <ul>
+                          <li class="part1">
+                              <div class="phgra">
+                                  <p class="bold">BIANCA DI</p>
+                                  <p>￥ 1479</p>
+                              </div>
+                              <img src="./../../static/images/image5.jpg">
+                          </li>
+                          <li class="part2">
+                              <div class="phgra">
+                                  <p class="bold"> Bvlgari</p>
+                                  <p>宝格丽</p>
+                                  <p>￥ 20240</p>
+                              </div>
+                              <img src="./../../static/images/image6.jpg">
+                          </li>
+                          <li class="part3">
+                              <div class="phgra">
+                                  <p class="bold">Saint Laurent</p>
+                                  <p>圣罗兰</p>
+                                  <p> ￥2302</p>
+                              </div>
+                              <img src="./../../static/images/image7.jpg">
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </li>
+        <li  class="storeLi">
+          <div class="part2">
+                <div class="left l">
+                    <img src="../../static/images/pic_082.jpg">
+                    <span class="outer">
+                        <span class="frame">
+                            <span>明星同款</span>
+                            <span>Balenciaga巴黎世家</span>
+                            <span>蔡卓妍同款 Balenciaga Handbags</span>
+                            <span>Fall/Winter</span>
+                        </span>
+                    </span>
+                </div>
+                <div class="right r">
+                    <div class="r-top">
+                        <ul>
+                            <li v-for="item in hotData">
+                                <img :src="item.img">
+                                <span class="outer">
+                                    <span class="frame">
+                                        <span>{{item.span1}}</span>
+                                        <span>{{item.span2}}</span>
+                                        <span>{{item.span3}}</span>
+                                        <span>{{item.span4}}</span>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+
+    <section class="part-3 w">
+        <div class="title">
+            <img src="../../static/images/pic_087.jpg">
+            <ul>
+                <li>经典箱包
+                    <span class="outer">
+                        <span class="frame">
+                            Classic Bags
+                        </span>
+                    </span>
+                </li>
+                <li>典藏腕表
+                     <span class="outer">
+                        <span class="frame">
+                            Collection watches
+                        </span>
+                    </span>
+                </li>
+                <li>精致配饰
+                     <span class="outer">
+                        <span class="frame">
+                            Exquisite accessories
+                        </span>
+                    </span>
+                </li>
+                <li>个护化妆
+                     <span class="outer">
+                        <span class="frame">
+                           Nurse makeup
+                        </span>
+                    </span>
+                </li>
+                <li>时尚鞋服
+                     <span class="outer">
+                        <span class="frame">
+                            Shoes and apparel
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="shopping-mall">
+          <div class="top">
+              <img src="../../static/images/pic_088.jpg" class="l">
+              <a href="javascript:;" class="r">SHOW MORE>></a>
+          </div>
+          <div class="goods">
+            <div class="goods1">
+              <ul class="goodslinks">
+                <li v-for="item in classicBags">
+                  <a href="javascript:;">{{item}}</a>
+                </li>
+              </ul>
+              <div class="slider">
+                <a href="javascript:;">
+                    <img src="../../static/images/pic01.jpg" class="l">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../static/images/pic02.png" class="l">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../static/images/pic03.png" class="l">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../static/images/pic04.png" class="l">
+                </a>
+              </div>
+            </div>
+            <div class="center l">
+                <img src="../../static/images/pic_099.jpg">
+            </div>
+            <div class="right l">
+                <ul>
+                    <li>
+                        <img src="../../static/images/pic_100.jpg">
+                    </li>
+                    <li>
+                        <img src="../../static/images/pic_101.jpg">
+                    </li>
+                    <li>
+                        <img src="../../static/images/pic_102.jpg">
+                    </li>
+                    <li>
+                        <img src="../../static/images/pic_103.jpg">
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="shopping-mall">
+          <div class="top">
+              <img src="../../static/images/goodtitle2.jpg" class="l">
+              <a href="javascript:;" class="r">SHOW MORE>></a>
+          </div>
+          <div class="goods">
+            <div class="goods1">
+              <ul class="goodslinks">
+                <li v-for="item in classicBags">
+                  <a href="javascript:;">{{item}}</a>
+                </li>
+              </ul>
+              <div class="slider">
+                <a href="javascript:;">
+                    <img src="../../static/images/pic01.jpg" class="l">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../static/images/pic02.png" class="l">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../static/images/pic03.png" class="l">
+                </a>
+                <a href="javascript:;">
+                    <img src="../../static/images/pic04.png" class="l">
+                </a>
+              </div>
+            </div>
+            <div class="center l">
+                <img src="../../static/images/watch.png">
+            </div>
+            <div class="right l">
+                <ul>
+                    <li>
+                        <img src="../../static/images/pic_1001.jpg">
+                    </li>
+                    <li>
+                        <img src="../../static/images/pic_1011.jpg">
+                    </li>
+                    <li>
+                        <img src="../../static/images/pic_1021.jpg">
+                    </li>
+                    <li>
+                        <img src="../../static/images/pic_1031.jpg">
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
     <Footer/>
   </div>
 </template>
@@ -247,6 +552,11 @@ export default {
   name: 'main-comp',
   data () {
     return {
+      classicBags:['单肩包','手提包','手提斜挎包','双肩包','手拿包','钱包','小皮件','旅行箱/包','斜挎包','化妆箱/包'],
+      hotData: [{'img':'../../static/images/pic_086.png','span1': '明星同款','span2':'Balenciaga巴黎世家','span3':'蔡卓妍同款 Balenciaga Handbags','span4': 'Fall/Winter'},
+                {'img':'../../static/images/pic_083.jpg','span1': '明星同款','span2':'Balenciaga巴黎世家','span3':'蔡卓妍同款 Balenciaga Handbags','span4': 'Fall/Winter'},
+                {'img':'../../static/images/pic_084.jpg','span1': '明星同款','span2':'Balenciaga巴黎世家','span3':'蔡卓妍同款 Balenciaga Handbags','span4': 'Fall/Winter'},
+                {'img':'../../static/images/pic_085.png','span1': '明星同款','span2':'Balenciaga巴黎世家','span3':'蔡卓妍同款 Balenciaga Handbags','span4': 'Fall/Winter'}],
       imgs: ['../../static/images/swip1.jpg', '../../static/images/swip2.jpg', '../../static/images/swip3.jpg', '../../static/images/swip4.jpg', '../../static/images/swip5.jpg', '../../static/images/swip6.jpg'],
       details:[{'goodsName':'Louis Vuitton/LV','cName':'路易.威登','img':'../../static/images/g1.png','imgSmall': '../../static/images/img1.png'},
                {'goodsName':'SK-II','cName':'SK-II','img':'../../static/images/g2.jpg','imgSmall': '../../static/images/img2.png'},
@@ -308,8 +618,23 @@ export default {
   },
   mounted () {
     this.changeIcon()
+    this.sliderHotItems()
+    this.shopMall()
   },
   methods: {
+    shopMall () {
+      var $bottom = $('.main .part-3 .title ul li');
+      $bottom.mouseenter(function(){
+          $(this).find('.outer').animate({
+              bottom:0
+          },200,'linear')
+      })
+      $bottom.mouseleave(function(){
+          $(this).find('.outer').animate({
+              bottom:'-50px'
+          },200,'linear')
+      })
+    },
     changeIcon () {
       var that = this
       var my = document.querySelector('.my')
@@ -332,7 +657,6 @@ export default {
       if (index >= 3) {
           this.currenIndex = 2;
       }
-
       if (index <= -1) {
           this.currenIndex = 0;
       }
@@ -352,6 +676,33 @@ export default {
     lineAnimate () {
       console.log('hhhh')
       console.log($(this).find('.topline'))
+    },
+    sliderHotItems () {
+      var currenIndex = 0;
+      this.init(currenIndex);
+    },
+    init (currentIndex) {
+      var lis = document.querySelectorAll('.main .storesame_link li');
+         for(var i=0; i<lis.length; i++){
+             lis[i].index = i;
+             var that = this
+             lis[i].onmouseover = function(){
+                 currentIndex = this.index;
+                 this.style.background='#000';
+                 this.onmouseout = function(){
+                     this.style.background='#999';
+                 }
+                 that.slideToItems(currentIndex);
+             }
+         }
+    },
+    slideToItems (index) {
+      console.log('hahhahaaha')
+      var left;
+      left = -1210 * index + 'px';
+      $('.main .storesame .storesame_box').animate({
+          left: left
+      }, 200, 'linear')
     }
   }
 }
